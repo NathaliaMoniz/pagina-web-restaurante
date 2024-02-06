@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="script/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoy-Grill Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style-migas-pan.css">
+
+</head>
+<body>
+    <div class="menu" id="menu">
+        <div class="bread-crumbs">
+            <ul>
+                <li>
+                <a href="#menu">
+                    <span class="icono">
+                        <ion-icon name="fast-food"></ion-icon>
+                    </span>
+                    <p>Menu</p>
+                </a>
+                </li>
+    
+                <li>
+                <a href="#revisar" id="enlace-revisar">
+                    <span class="icono">
+                        <ion-icon name="card"></ion-icon>
+                    </span>
+                    <p>Revisar</p>
+                </a>
+                </li>
+    
+                <li>
+                <a href="#">
+                    <span class="icono">
+                        <ion-icon name="bag-check"></ion-icon>
+                    </span>
+                    <p>Completado</p>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono-carrito">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <p id="total-productos">0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="platos">
+            <div class="food">
+                <img src="./img/comida7.jpg" alt="articulo 1 del menu">
+                <h2>Ceviche de Mariscos en Jardín de Sabores Exóticos</h2>
+                <p>El pescado de temporada más fresco, laminado en finas lonchas, maridado con limón y aderezado con la mezcla perfecta de especias.</p>
+                <h3>70.00€</h3>
+                <button class="añadido" id="añadido1" data-nombre="Ceviche">Añadir al carrito</button>
+                <button class="añadido" id="quitar1" data-nombre="Ceviche">Quitar del carrito</button>
+            </div>
+            <div class="food">
+                <img src="./img/comida2.jpg" alt="articulo 2 del menu">
+                <h2>Gnocchis Primavera Tostados en Éxtasis Vegetal</h2>
+                <p>Gnocchis hechos a mano en una cama de puré de guisantes adornados por una selección de verduras de primavera frescas y crocantes</p>
+                <h3>50.00€</h3>
+                <button class="añadido" id="añadido2" data-nombre="Gnocchis">Añadir al carrito</button>
+                <button class="añadido" id="quitar2" data-nombre="Gnocchis">Quitar del carrito</button>
+            </div>
+            <div class="food">
+                <img src="./img/comida9.jpg" alt="articulo 2 del menu">
+                <h2>Cordero de Montaña Glaseado en Esencia de la Tierra</h2>
+                <p>Pierna de cordero cocinada a fuego lento tierna, jugosa y llena de sabor con una fina capa de glaseado que realza su dulzura natural</p>
+                <h3>85.00€</h3>
+                <button class="añadido" id="añadido3" data-nombre="Cordero">Añadir al carrito</button>
+                <button class="añadido" id="quitar3" data-nombre="Cordero">Quitar del carrito</button>
+            </div>
+            <div class="food">
+                <img src="./img/comida3.jpg" alt="articulo 2 del menu">
+                <h2>Ostras de la Costa en Delicias Marinas</h2>
+                <p>Ostras frescas seleccionadas a mano acompañadas de mignonette de chalotas, preparado con vinagre de vino blanco y pimienta.</p>
+                <h3>50.00€</h3>
+                <button class="añadido" id="añadido4" data-nombre="Ostras">Añadir al carrito</button>
+                <button class="añadido" id="quitar4" data-nombre="Ostras">Quitar del carrito</button>
+            </div>
+            <div class="food">
+                <img src="./img/comida8.jpg" alt="articulo 2 del menu">
+                <h2>Tartaleta de Uva Confitada Realzada en Delicadeza Dulce</h2>
+                <p>Uvas frescas de las mejores cosechas en reducción de vino Moscatel posadas sobre una base de la tartaleta, crujiente y dorada.</p>
+                <h3>20.00€</h3>
+                <button class="añadido" id="añadido5" data-nombre="Tartaleta de uvas">Añadir al carrito</button>
+                <button class="añadido" id="quitar5" data-nombre="Tartaleta de uvas">Quitar del carrito</button>
+            </div>
+            <div class="food">
+                <img src="./img/comida5.jpg" alt="articulo 2 del menu">
+                <h2>Éclair de Crema de Avellanas con Sorbete de Fresa</h2>
+                <p>Éclair, horneado a la perfección, con una masa crujiente rellena de una suave crema de avellanas acompañado de una bolita de helado de fresa.</p>
+                <h3>35.00€</h3>
+                <button class="añadido" id="añadido6" data-nombre="Éclair">Añadir al carrito</button>
+                <button class="añadido" id="quitar6" data-nombre="Éclair">Quitar del carrito</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="revisar" id="revisar" style="display: none;">
+        <div class="bread-crumbs">
+            <ul>
+                <li>
+                <a href="#menu" id="enlace-menu">
+                    <span class="icono">
+                        <ion-icon name="fast-food"></ion-icon>
+                    </span>
+                    <p>Menu</p>
+                </a>
+                </li>
+    
+                <li>
+                <a href="#nada">
+                    <span class="icono">
+                        <ion-icon name="card"></ion-icon>
+                    </span>
+                    <p>Revisar</p>
+                </a>
+                </li>
+    
+                <li>
+                <a href="#completado" id="enlace-completado">
+                    <span class="icono">
+                        <ion-icon name="bag-check"></ion-icon>
+                    </span>
+                    <p>Completado</p>
+                </a>
+                </li>
+                <li>
+                    <a href="#nada">
+                        <span class="icono-carrito" >
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <p id="total-productos2">0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <header class="carrito-header" id="tu-carrito" >
+            <h3>Tu carrito</h3>
+        </header>
+        <div class="contenido-carrito">
+            <div class="producto">
+                <img src="./img/comida7.jpg" alt="ceviche de mariscos">
+                <div class="contenido-producto">
+                    <h5>Ceviche de Mariscos en Jardín de Sabores Exóticos</h5>
+                    <p>€ <span id="precio-producto1">70.00</span></p>
+                    <p>Cantidad: <span id="cantidad_plato1">0</span></p>
+                    <button class="trash" id="trash1" data-nombre="Ceviche">
+                        <span class="icono">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </span>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="producto">
+                <img src="./img/comida2.jpg" alt="Gnocchis primavera">
+                <div class="contenido-producto">
+                    <h5>Gnocchis Primavera Tostados en Éxtasis Vegetal</h5>
+                    <p>€ <span id="precio-producto2">50.00</span></p>
+                    <p>Cantidad: <span id="cantidad_plato2">0</span></p>
+                    <button class="trash" id="trash2" data-nombre="Gnocchis">
+                        <span class="icono">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="./img/comida9.jpg" alt="Cordero glaseado">
+                <div class="contenido-producto">
+                    <h5>Cordero de Montaña Glaseado en Esencia de la Tierra</h5>
+                    <p>€ <span id="precio-producto3">85.00</span></p>
+                    <p>Cantidad: <span id="cantidad_plato3">0</span></p>
+                    <button class="trash">
+                        <span class="icono" id="trash3" data-nombre="Cordero">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>          
+            </div>
+            <div class="producto">
+                <img src="./img/comida3.jpg" alt="Ostras">
+                <div class="contenido-producto">
+                    <h5>Ostras de la Costa en Delicias Marinas</h5>
+                    <p>€ <span id="precio-producto4">50.00</span></p>
+                    <p>Cantidad: <span id="cantidad_plato4">0</span></p>
+                    <button class="trash" id="trash4" data-nombre="Ostras">
+                        <span class="icono">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="./img/comida8.jpg" alt="Tartaleta de uva">
+                <div class="contenido-producto">
+                    <h5>Tartaleta de Uva Confitada Realzada en Delicadeza Dulce</h5>
+                    <p>€ <span id="precio-producto5">20.00</span></p>
+                    <p>Cantidad: <span id="cantidad_plato5">0</span></p>
+                    <button class="trash" id="trash5" data-nombre="Tartaleta de uva">
+                        <span class="icono">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>
+                
+            </div>
+            <div class="producto">
+                <img src="./img/comida5.jpg" alt="Eclair de avellana">
+                <div class="contenido-producto">
+                    <h5>Éclair de Crema de Avellanas con Sorbete de Fresa</h5>
+                    <p>€ <span id="precio-producto6">35.00</span></p>
+                    <p>Cantidad: <span id="cantidad_plato6">0</span></p>
+                    <button class="trash" id="trash6" data-nombre="Éclair">
+                        <span class="icono">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>   
+            </div>
+        </div>
+        <p class="precio-total">Total: €<span id="precio-total">0</span></p>       
+    </div>
+    <div class="completado" id="completado" style="display: none;">
+        <div class="bread-crumbs">
+            <ul>
+                <li>
+                <a href="#nada">
+                    <span class="icono">
+                        <ion-icon name="fast-food"></ion-icon>
+                    </span>
+                    <p>Menu</p>
+                </a>
+                </li>
+    
+                <li>
+                <a href="#nada">
+                    <span class="icono">
+                        <ion-icon name="card"></ion-icon>
+                    </span>
+                    <p>Revisar</p>
+                </a>
+                </li>
+    
+                <li>
+                <a href="#nada">
+                    <span class="icono">
+                        <ion-icon name="bag-check"></ion-icon>
+                    </span>
+                    <p>Completado</p>
+                </a>
+                </li>
+                <li>
+                    <a href="#nada">
+                        <span class="icono-carrito">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <p id="total-productos3">0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-less">
+            <div class="completado-contenido">
+            <div class="check">
+                <span class="icono-completado">
+                    <ion-icon name="checkmark-done">
+                    </ion-icon>
+                </span>
+            </div>
+            <h1>Tu pedido ha sido procesado correctamente y lo recibirás en 10 minutos.</h1>
+        </div>
+        <div class="contador">
+            <div class="contenedor-minutos">
+                <h3 class="minutos">Time</h3>
+                <h3>Minutos</h3>
+            </div>
+            <div class="contenedor-segundos">
+                <h3 class="segundos">Time</h3>
+                <h3>Segundos</h3>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

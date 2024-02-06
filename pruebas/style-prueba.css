@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Onest', sans-serif;
+  }
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(81, 9, 19, 0.8), rgba(85, 12, 22, 0.8)), url(../img/login-bckgrnd.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Onest', sans-serif;
+}
+
+.pagina{
+  width: 100%;
+}
+.bread-crumbs{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*centra*/
+  width: 100%;
+  height: 10%;
+}
+
+.bread-crumbs ul{
+  display: flex;
+  justify-content: center;
+}
+
+.bread-crumbs ul li{
+    width: 100px;
+    margin-right: 10%;
+    position: relative;   
+}
+
+.bread-crumbs ul li:last-child{
+  margin-right: 0;
+}
+
+.bread-crumbs ul li a{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.bread-crumbs ul li a .icono{
+  display: block;
+  width: 90%;
+  height: 70%;
+  margin: 0 auto 12px;
+  background-color: rgb(255, 255, 255);
+  line-height: 90px;
+  color: rgb(137, 33, 47);
+  border-radius: 50px;
+  font-size: 200%;
+  border: 3px solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+img{
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+p{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.seleccion{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.food{
+  position: relative;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  border: 15px solid rgb(137, 33, 47);
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px;
+  transition: 0.4s;  
+  box-sizing: border-box;
+  float: left;
+}
+.food:first-child{
+  margin-top: 200px;
+}
+.food:nth-child(2){
+  margin-top: 200px;
+}
+.food:nth-child(3){
+  margin-top: 200px;
+}
+
+.food:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transform: translate(0px, -8px);
+}
+
+button{
+    flex-basis: 48%;
+    background: rgb(137, 33, 47);
+    height: 40px;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: opacity 0.25s;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+button:active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(137, 33, 47);
+}
+
+@media(max-width:1550px){
+  .food{
+      width: 45%;
+  }
+  .food:nth-child(3){
+    margin: 30px;
+  }
+}
+
+@media(max-width:1200px){
+  .food{
+      width: 65%;
+  }
+  .food:nth-child(2){
+    margin: 30px;
+  }
+}   
+
+@media(max-width:800px){
+  .food{
+      width: 100%;
+  }
+  .food:nth-child(2){
+    margin: 30px;
+  }
+}   
+
+
+
